@@ -69,10 +69,10 @@
             @csrf <!-- Token CSRF do Laravel -->
 
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required pattern="[a-zA-Z]+">
 
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" name="sobrenome" required>
+            <input type="text" id="sobrenome" name="sobrenome" required pattern="[a-zA-Z]+">
 
             <button type="submit">Enviar</button>
         </form>
