@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+use App\Http\Controllers\Controlador;
+
+Route::get('/', [Controlador::class, 'index']);
+Route::post('/processar-formulario', [Controlador::class, 'processarFormulario'])->name('processar-formulario');
